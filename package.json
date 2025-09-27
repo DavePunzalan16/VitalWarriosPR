@@ -1,10 +1,13 @@
 {
+  "homepage": "https://DavePunzalan16.github.io/VitalWarriosPR",
   "name": "vital-warriors",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
@@ -12,9 +15,9 @@
   "dependencies": {
     "@types/react-bootstrap": "^1.0.1",
     "@types/styled-jsx": "^2.2.9",
-    "bootstrap": "^5.3.8",
-    "gh-pages": "^6.3.0",
-    "next": "^15.5.3",
+"bootstrap": "^5.3.8",
+"gh-pages": "^6.3.0",
+"next": "^15.5.3",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.1.1",
